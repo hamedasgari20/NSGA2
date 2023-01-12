@@ -4,7 +4,7 @@ close all;
 
 %% Problem Definition
 
-CostFunction=@(x) MOP4(x);      % Cost Function
+CostFunction=@(x) MOP2(x);      % Cost Function
 
 nVar=3;             % Number of Decision Variables
 
