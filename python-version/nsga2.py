@@ -1,7 +1,8 @@
 import numpy as np
 
 from MOP2 import MOP2
-from NonDominatedSorting import  NonDominatedSorting
+from NonDominatedSorting import NonDominatedSorting
+
 # Problem Definition
 
 CostFunction = MOP2  # Cost Function
@@ -18,7 +19,7 @@ nObj = np.size(CostFunction(np.random.uniform(VarMin, VarMax, nVar)))
 
 MaxIt = 100;  # Maximum Number of Iterations
 
-nPop = 50;  # Population Size
+nPop = 10;  # Population Size
 
 pCrossover = 0.7;  # Crossover Percentage
 nCrossover = 2 * round(pCrossover * nPop / 2);  # Number of Parnets (Offsprings)
@@ -46,5 +47,5 @@ for item in pop:
     item["Cost"] = CostFunction(item["Position"])
 
 ## Non-Dominated Sorting
-[pop, F]=NonDominatedSorting(pop)
+pop, F = NonDominatedSorting(pop)
 
