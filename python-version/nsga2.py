@@ -2,7 +2,7 @@ import numpy as np
 
 from MOP2 import MOP2
 from NonDominatedSorting import NonDominatedSorting
-
+from CalcCrowdingDistance import CalcCrowdingDistance
 # Problem Definition
 
 CostFunction = MOP2  # Cost Function
@@ -49,3 +49,5 @@ for item in pop:
 ## Non-Dominated Sorting
 pop, F = NonDominatedSorting(pop)
 
+# Calculate Crowding Distance
+pop = CalcCrowdingDistance(pop, F)

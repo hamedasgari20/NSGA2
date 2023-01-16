@@ -21,7 +21,7 @@ nObj=numel(CostFunction(unifrnd(VarMin,VarMax,VarSize)));
 
 MaxIt=100;      % Maximum Number of Iterations
 
-nPop=50;        % Population Size
+nPop=10;        % Population Size
 
 pCrossover=0.7;                         % Crossover Percentage
 nCrossover=2*round(pCrossover*nPop/2);  % Number of Parnets (Offsprings)
@@ -59,6 +59,7 @@ end
 % Calculate Crowding Distance
 pop=CalcCrowdingDistance(pop,F);
 
+%{
 % Sort Population
 [pop F]=SortPopulation(pop);
 
@@ -139,7 +140,7 @@ end
 %% Results
 
 
-
+%}
 
 
 
