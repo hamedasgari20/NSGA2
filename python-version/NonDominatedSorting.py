@@ -35,7 +35,7 @@ def NonDominatedSorting(pop):
 
     while True:
         Q = []
-        for i in range(len(F[k])):
+        for i in F[k]:
             p = pop[i]
 
             for j in p["DominationSet"]:
@@ -52,7 +52,7 @@ def NonDominatedSorting(pop):
         if len(Q)==0:
             break
 
-        F.insert(k+1, Q)
+        F.append(Q)
 
         k=k+1
 
