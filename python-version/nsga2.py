@@ -19,7 +19,7 @@ nObj = np.size(CostFunction(np.random.uniform(VarMin, VarMax, nVar)))
 
 MaxIt = 100;  # Maximum Number of Iterations
 
-nPop = 10;  # Population Size
+nPop = 30;  # Population Size
 
 pCrossover = 0.7;  # Crossover Percentage
 nCrossover = 2 * round(pCrossover * nPop / 2);  # Number of Parnets (Offsprings)
