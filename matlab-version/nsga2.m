@@ -59,7 +59,7 @@ end
 % Calculate Crowding Distance
 pop=CalcCrowdingDistance(pop,F);
 
-%{
+
 % Sort Population
 [pop F]=SortPopulation(pop);
 
@@ -139,8 +139,6 @@ end
 
 %% Results
 
-
-%}
 
 
 

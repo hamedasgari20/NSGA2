@@ -3,11 +3,11 @@ from Dominates import Dominates
 
 
 def NonDominatedSorting(pop):
-    nPop = np.size(pop)
+    # nPop = np.size(pop)
 
-    for i in pop:
-        i["DominationSet"] = []
-        i["DominatedCount"] = 0
+    for i in range(len(pop)):
+        pop[i]["DominationSet"] = []
+        pop[i]["DominatedCount"] = 0
 
     F = [[]]
 
