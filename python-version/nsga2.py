@@ -3,6 +3,7 @@ import numpy as np
 from MOP2 import MOP2
 from NonDominatedSorting import NonDominatedSorting
 from CalcCrowdingDistance import CalcCrowdingDistance
+from SortPopulation import SortPopulation
 # Problem Definition
 
 CostFunction = MOP2  # Cost Function
@@ -19,7 +20,7 @@ nObj = np.size(CostFunction(np.random.uniform(VarMin, VarMax, nVar)))
 
 MaxIt = 100;  # Maximum Number of Iterations
 
-nPop = 30;  # Population Size
+nPop = 10;  # Population Size
 
 pCrossover = 0.7;  # Crossover Percentage
 nCrossover = 2 * round(pCrossover * nPop / 2);  # Number of Parnets (Offsprings)
@@ -51,3 +52,7 @@ pop, F = NonDominatedSorting(pop)
 
 # Calculate Crowding Distance
 pop = CalcCrowdingDistance(pop, F)
+
+# Sort Population
+pop, F = SortPopulation(pop)
+
