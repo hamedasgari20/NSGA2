@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="308ef3d1-a676-4ed5-b692-10f16ef71152" name="Changes" comment="Edit Code styles" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JmHafF3CQHPXZ15pxOtszTK384" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Hamed/Desktop/NSGA2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="NSGA2" is-module-sdk="true" working-directory="$PROJECT_DIR$/python-version">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="NSGA2" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$/python-version" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="nsga2" type="PythonConfigurationType" factoryName="Python">
+      <module name="NSGA2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Hamed\Desktop\NSGA2\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python-version" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python-version/nsga2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="308ef3d1-a676-4ed5-b692-10f16ef71152" name="Changes" comment="" />
+      <created>1672676403846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672676403846</updated>
+      <workItem from="1672676405160" duration="416000" />
+      <workItem from="1672900466361" duration="2376000" />
+      <workItem from="1672903319932" duration="20317000" />
+      <workItem from="1673502931269" duration="16499000" />
+      <workItem from="1673521561854" duration="53000" />
+      <workItem from="1673521624007" duration="585000" />
+      <workItem from="1673522215300" duration="19000" />
+      <workItem from="1673523635150" duration="40000" />
+      <workItem from="1673523677155" duration="65000" />
+      <workItem from="1673523784960" duration="1340000" />
+      <workItem from="1673526245704" duration="5242000" />
+      <workItem from="1673881931271" duration="9001000" />
+      <workItem from="1674049747953" duration="5292000" />
+      <workItem from="1674059099833" duration="6421000" />
+      <workItem from="1674110480011" duration="19654000" />
+      <workItem from="1674716350530" duration="17128000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adding Python version">
+      <created>1673521390250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673521390250</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding Python version">
+      <created>1673528900012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673528900012</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding Python version">
+      <created>1673884471155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673884471156</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding Python version">
+      <created>1673893642525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673893642525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adding Python version">
+      <created>1674066774174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674066774174</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding Python version">
+      <created>1674121641201</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674121641201</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding Python version">
+      <created>1674138529747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674138529747</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding Python version">
+      <created>1674733126601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674733126601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Edit Code styles">
+      <created>1674735814673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674735814673</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Python version" />
+    <MESSAGE value="Edit Code styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit Code styles" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NSGA2$nsga2.coverage" NAME="nsga2 Coverage Results" MODIFIED="1674735689419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-version" />
+  </component>
+</project>
