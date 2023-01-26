@@ -1,9 +1,10 @@
-import numpy as np
 from operator import itemgetter
 
 
-def SortPopulation(pop):
-
+def sort_population(pop):
+    """
+    This function sorts populations based on crowding distance and rank
+    """
     # Sort Based on Crowding Distance
     pop = sorted(pop, key=itemgetter('CrowdingDistance'), reverse=False)
 
@@ -11,14 +12,14 @@ def SortPopulation(pop):
     pop = sorted(pop, key=itemgetter('Rank'), reverse=False)
 
     # Update Fronts
-    Ranks = []
+    ranks = []
     for i in range(len(pop)):
-        Ranks.append(pop[i]["Rank"])
-    MaxRank=max(Ranks)
-    F=[]
-    for r in range(1, MaxRank+1):
+        ranks.append(pop[i]["Rank"])
+    max_rank = max(ranks)
+    f = []
+    for r in range(1, max_rank + 1):
         li = []
-        li = [i for i in range(len(Ranks)) if Ranks[i] == r]
-        F.append(li)
+        li = [i for i in range(len(ranks)) if ranks[i] == r]
+        f.append(li)
 
-    return pop, F
+    return pop, f

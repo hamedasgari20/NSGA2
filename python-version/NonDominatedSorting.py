@@ -1,26 +1,27 @@
-import numpy as np
-from Dominates import Dominates
+from Dominates import dominates
 
 
-def NonDominatedSorting(pop):
-    # nPop = np.size(pop)
+def non_dominated_sorting(pop):
+    """
+    This function sorts population based on non dominated sorting algorithm
 
+    """
     for i in range(len(pop)):
         pop[i]["DominationSet"] = []
         pop[i]["DominatedCount"] = 0
 
-    F = [[]]
+    f = [[]]
 
     for i in range(len(pop)):
-        for j in range(i+1, len(pop)):
+        for j in range(i + 1, len(pop)):
             p = pop[i]
             q = pop[j]
 
-            if Dominates(p, q):
+            if dominates(p, q):
                 p["DominationSet"].append(j)
                 q["DominatedCount"] = q["DominatedCount"] + 1
 
-            if Dominates(q, p):
+            if dominates(q, p):
                 q["DominationSet"].append(i)
                 p["DominatedCount"] = p["DominatedCount"] + 1
 
@@ -28,14 +29,14 @@ def NonDominatedSorting(pop):
             pop[j] = q
 
         if pop[i]["DominatedCount"] == 0:
-            F[0].append(i)
+            f[0].append(i)
             pop[i]["Rank"] = 1
 
     k = 0
 
     while True:
         Q = []
-        for i in F[k]:
+        for i in f[k]:
             p = pop[i]
 
             for j in p["DominationSet"]:
@@ -49,11 +50,11 @@ def NonDominatedSorting(pop):
 
                 pop[j] = q
 
-        if len(Q)==0:
+        if len(Q) == 0:
             break
 
-        F.append(Q)
+        f.append(Q)
 
-        k=k+1
+        k = k + 1
 
-    return [pop, F]
+    return [pop, f]
