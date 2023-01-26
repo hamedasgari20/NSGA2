@@ -6,6 +6,7 @@ from CalcCrowdingDistance import CalcCrowdingDistance
 from SortPopulation import SortPopulation
 from Crossover import Crossover
 from Mutate import Mutate
+from PlotCosts import PlotCosts
 # Problem Definition
 
 CostFunction = MOP2  # Cost Function
@@ -19,10 +20,9 @@ VarMax = 5  # Upper Bound of Variables
 nObj = np.size(CostFunction(np.random.uniform(VarMin, VarMax, nVar)))
 
 ## NSGA-II Parameters
+MaxIt = 100;  # Maximum Number of Iterations
 
-MaxIt = 10;  # Maximum Number of Iterations
-
-nPop = 10;  # Population Size
+nPop = 50;  # Population Size
 
 pCrossover = 0.7;  # Crossover Percentage
 nCrossover = 2 * round(pCrossover * nPop / 2);  # Number of Parnets (Offsprings)
@@ -116,42 +116,45 @@ for it in range(1, MaxIt):
 
         popm[k]["Cost"] = CostFunction(popm[k]["Position"])
 
-        # Merge
-        pop = popc + popm + pop
+    # Merge
+    pop = popc + popm + pop
 
 
 
 
-        ## Non-Dominated Sorting
-        pop, F = NonDominatedSorting(pop)
+    ## Non-Dominated Sorting
+    pop, F = NonDominatedSorting(pop)
 
-        # Calculate Crowding Distance
-        pop = CalcCrowdingDistance(pop, F)
+    # Calculate Crowding Distance
+    pop = CalcCrowdingDistance(pop, F)
 
-        # Sort Population
-        pop, F = SortPopulation(pop)
-
-
-        # Truncate
-        pop = pop[0:nPop]
+    # Sort Population
+    pop, F = SortPopulation(pop)
 
 
-
-
-        ## Non-Dominated Sorting
-        pop, F = NonDominatedSorting(pop)
-
-        # Calculate Crowding Distance
-        pop = CalcCrowdingDistance(pop, F)
-
-        # Sort Population
-        pop, F = SortPopulation(pop)
+    # Truncate
+    pop = pop[0:nPop]
 
 
 
-        # Store F1
-        F1 = [pop[i] for i in F[0]]
 
-        # Show Iteration Information
-        print('Iteration {} : Number of F1 Members = {}'.format(it, len(F1)))
+    ## Non-Dominated Sorting
+    pop, F = NonDominatedSorting(pop)
+
+    # Calculate Crowding Distance
+    pop = CalcCrowdingDistance(pop, F)
+
+    # Sort Population
+    pop, F = SortPopulation(pop)
+
+
+
+    # Store F1
+    F1 = [pop[i] for i in F[0]]
+
+    # Show Iteration Information
+    print('Iteration {} : Number of F1 Members = {}'.format(it, len(F1)))
+
+PlotCosts(pop)
+
 
