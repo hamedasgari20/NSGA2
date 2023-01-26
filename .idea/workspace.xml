@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="308ef3d1-a676-4ed5-b692-10f16ef71152" name="Changes" comment="Edit Code styles" />
+    <list default="true" id="308ef3d1-a676-4ed5-b692-10f16ef71152" name="Changes" comment="Edit Code styles">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +91,7 @@
       <workItem from="1674049747953" duration="5292000" />
       <workItem from="1674059099833" duration="6421000" />
       <workItem from="1674110480011" duration="19654000" />
-      <workItem from="1674716350530" duration="17128000" />
+      <workItem from="1674716350530" duration="17807000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Python version">
       <created>1673521390250</created>
