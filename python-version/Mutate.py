@@ -1,15 +1,18 @@
-import numpy as np
-from numpy import random as ra
 import random
 
+import numpy as np
+from numpy import random as ra
 
-def Mutate(x, mu, sigma):
 
-    nVar = len(x)
+def mutate(x, mu, sigma):
+    """
+    This function mutates a member of the population based on mutation rate.
+    """
+    nvar = len(x)
 
-    nMu = np.ceil(mu * nVar)
+    nmu = np.ceil(mu * nvar)
 
-    j = random.sample(range(1, nVar), int(nMu))
+    j = random.sample(range(1, nvar), int(nmu))
 
     y = x
 

@@ -1,16 +1,18 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 
-def PlotCosts(pop):
-
-    nObj = len(pop[0]["Cost"])
+def plot_costs(pop):
+    """
+    This function plots the results
+    """
+    nobj = len(pop[0]["Cost"])
     n = len(pop)
 
-    Costs = np.zeros((nObj, n))
+    costs = np.zeros((nobj, n))
 
     for j in range(n):
-        Costs[:, j] = pop[j]["Cost"].ravel()
+        costs[:, j] = pop[j]["Cost"].ravel()
 
-    plt.plot(Costs[0,:], Costs[1,:], 'ro')
+    plt.plot(costs[0, :], costs[1, :], 'ro')
     plt.show()

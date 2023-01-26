@@ -1,36 +1,38 @@
 import numpy as np
 
-def CalcCrowdingDistance(pop, F):
 
-    nF = len(F)
-    nObj = len(pop[0]["Cost"])
+def cal_crowding_distance(pop, f):
+    """
+    This function calculates crowding distance and list of frontiers
+    """
 
-    for k in range(nF):
+    nf = len(f)
+    nobj = len(pop[0]["Cost"])
 
-        n = len(F[k])
+    for k in range(nf):
 
-        Costs = np.zeros((nObj, n))
+        n = len(f[k])
+
+        costs = np.zeros((nobj, n))
 
         for j in range(n):
-            Costs[:, j] = pop[F[k][j]]["Cost"].ravel()
+            costs[:, j] = pop[f[k][j]]["Cost"].ravel()
 
-        d=np.zeros((n, nObj))
+        d = np.zeros((n, nobj))
 
-        for j in range(nObj):
+        for j in range(nobj):
 
-            so = np.argsort(Costs[j, :])
-            cj = Costs[j, :][so]
+            so = np.argsort(costs[j, :])
+            cj = costs[j, :][so]
 
             d[so[0], j] = np.inf
 
-
-            for i in range(1, n-1):
-                d[so[i], j] = np.abs(cj[i+1]-cj[i-1])/np.abs(cj[1]-cj[-1])
+            for i in range(1, n - 1):
+                d[so[i], j] = np.abs(cj[i + 1] - cj[i - 1]) / np.abs(cj[1] - cj[-1])
 
             d[so[-1], j] = np.inf
 
         for i in range(n):
-
-            pop[F[k][i]]["CrowdingDistance"] = sum(d[i, :])
+            pop[f[k][i]]["CrowdingDistance"] = sum(d[i, :])
 
     return pop
